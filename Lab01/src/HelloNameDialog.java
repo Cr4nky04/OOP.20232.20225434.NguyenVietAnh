@@ -8,5 +8,4 @@ public class HelloNameDialog {
 		JOptionPane.showMessageDialog(null,"Hi "+ result + "!");
 		System.exit(0);
 	}
-
 }
