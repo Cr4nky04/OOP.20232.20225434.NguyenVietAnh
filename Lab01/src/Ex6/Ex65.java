@@ -1,7 +1,7 @@
 package Lab01.src.Ex6;
 import java.util.Arrays;
 
-public class NumericArrayTools { 
+public class Ex65 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] numericArray = {1789,2035,1899,1456,2013};

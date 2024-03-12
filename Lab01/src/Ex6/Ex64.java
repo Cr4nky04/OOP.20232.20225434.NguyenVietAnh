@@ -1,6 +1,6 @@
 package Lab01.src.Ex6;
 import java.util.Scanner;
-public class DaysOfMonth {
+public class Ex64 {
 
 	public static void main(String[] args) {
 		int dayCount = 0;

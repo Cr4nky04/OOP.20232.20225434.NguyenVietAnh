@@ -1,6 +1,6 @@
 package Lab01.src.Ex2;
 import javax.swing.JOptionPane;
-public class ShowTwoNumbers {
+public class Ex224 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

@@ -1,5 +1,5 @@
 package Lab01.src.Ex6;
-public class MatrixAddition {
+public class Ex66 {
     public static void main(String[] args) {
         int[][] matrix1 = {
             {1, 2, 3},

@@ -1,6 +1,6 @@
 package Lab01.src.Ex2;
 
-public class EquationSolver {
+public class Ex226 {
 
 	public void firstDegree(double a, double b)
 	{

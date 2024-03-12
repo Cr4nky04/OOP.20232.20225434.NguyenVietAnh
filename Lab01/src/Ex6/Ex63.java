@@ -1,6 +1,6 @@
 package Lab01.src.Ex6;
 import java.util.Scanner;
-public class BuildTriangle {
+public class Ex63 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

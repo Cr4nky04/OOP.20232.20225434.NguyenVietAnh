@@ -1,6 +1,6 @@
 package Lab01.src.Ex2;
 import javax.swing.JOptionPane;
-public class FirstDialog {
+public class Ex222 {
 	public static void main(String[] orgs)
 	{
 		JOptionPane.showMessageDialog(null, "Hello world! How are you?");

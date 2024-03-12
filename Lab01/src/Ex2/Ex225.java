@@ -1,12 +1,12 @@
 package Lab01.src.Ex2;
 import javax.swing.JOptionPane;
-public class CalculateTools {
+public class Ex225 {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		double num2,num1;
+	public static void solve() {
+		double num1 = 0;
+		double num2 = 0;
 		String str1,str2;
-		do
+		try
 		{
 			str1 = JOptionPane.showInputDialog(null, "Please enter first number: ", "Input the first number", JOptionPane.INFORMATION_MESSAGE);
 			str2 = JOptionPane.showInputDialog(null, "Please enter first number: ", "Input the first number", JOptionPane.INFORMATION_MESSAGE);
@@ -14,11 +14,13 @@ public class CalculateTools {
 			num2 = Double.parseDouble(str2);
 			if(num2==0)
 			{
-				System.out.println("Your divisor is invalid value");
-				System.out.println("Please try again!");
+				throw new ArithmeticException();
 			}
 		}
-		while(num2==0);
+		catch (ArithmeticException e)
+		{
+			System.out.println("Invalid divisor!");
+		}
 		
 		double sum,differ,product,quotient;
 		sum = num1 + num2;

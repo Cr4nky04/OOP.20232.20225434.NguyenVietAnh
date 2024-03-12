@@ -1,6 +1,6 @@
 package Lab01.src.Ex6;
 import java.util.Scanner;
-public class InputFromKeyboard {
+public class Ex62 {
 
 	public static void main(String[] args) {
 		Scanner keyboard = new Scanner(System.in);
