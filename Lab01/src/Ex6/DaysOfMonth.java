@@ -1,4 +1,4 @@
-package Ex6;
+package Lab01.src.Ex6;
 import java.util.Scanner;
 public class DaysOfMonth {
 

@@ -1,4 +1,4 @@
-package Ex6;
+package Lab01.src.Ex6;
 import javax.swing.JOptionPane;
 public class ChoosingOption {
 	public static void main(String[] args)

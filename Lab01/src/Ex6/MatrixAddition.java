@@ -1,4 +1,4 @@
-package Ex6;
+package Lab01.src.Ex6;
 public class MatrixAddition {
     public static void main(String[] args) {
         int[][] matrix1 = {

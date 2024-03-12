@@ -1,4 +1,4 @@
-package Ex2;
+package Lab01.src.Ex2;
 import javax.swing.JOptionPane;
 public class FirstDialog {
 	public static void main(String[] orgs)

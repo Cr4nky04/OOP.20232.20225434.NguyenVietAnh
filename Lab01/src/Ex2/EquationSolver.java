@@ -1,8 +1,8 @@
-package Ex2;
+package Lab01.src.Ex2;
 
 public class EquationSolver {
 
-	public void firstdegreeEquation(double a, double b)
+	public void firstDegree(double a, double b)
 	{
 		double x;
 		if(a==0)
@@ -15,7 +15,7 @@ public class EquationSolver {
 			System.out.println("The solution is x = " + x);
 		}
 	}
-	public void firstdegreesystemEquation(double a11, double a12,double b1, double a21, double a22, double b2)
+	public void systemEq(double a11, double a12,double b1, double a21, double a22, double b2)
 	{
 		double x1,x2;
 		double D = a11*a22-a21*a12;
@@ -32,7 +32,7 @@ public class EquationSolver {
 			System.out.println("Solution: x1 = "+x1+", x2 = "+x2);
 		}
 	}
-	public void seconddegreeEquation(double a, double b, double c)
+	public void secondDegree(double a, double b, double c)
 	{
 		double delta = b*b - 4*a*c;
 		if(delta<0)
@@ -47,8 +47,8 @@ public class EquationSolver {
 		else
 		{
 			double x1,x2;
-			x1 = 1/2*(-b+Math.sqrt(delta))/a;
-			x2 = 1/2*(-b-Math.sqrt(delta))/a;
+			x1 = (double) 1 /2*(-b+Math.sqrt(delta))/a;
+			x2 = (double) 1 /2*(-b-Math.sqrt(delta))/a;
 			System.out.println("This equation has 2 solutions: x1 = "+x1+", x2 = "+x2);
 		}
 		

@@ -1,10 +1,10 @@
-package Ex2;
+package Lab01.src.Ex2;
 import javax.swing.JOptionPane;
 public class CalculateTools {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Double num2,num1;
+		double num2,num1;
 		String str1,str2;
 		do
 		{
@@ -20,7 +20,7 @@ public class CalculateTools {
 		}
 		while(num2==0);
 		
-		Double sum,differ,product,quotient;
+		double sum,differ,product,quotient;
 		sum = num1 + num2;
 		differ = Math.abs(num1-num2);
 		product = num1 * num2;
