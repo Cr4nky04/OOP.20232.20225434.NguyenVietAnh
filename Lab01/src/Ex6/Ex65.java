@@ -2,7 +2,7 @@ package Lab01.src.Ex6;
 import java.util.Arrays;
 
 public class Ex65 {
-	public static void main(String[] args) {
+	public static void solve() {
 		// TODO Auto-generated method stub
 		int[] numericArray = {1789,2035,1899,1456,2013};
 		sort(numericArray);
@@ -10,19 +10,17 @@ public class Ex65 {
 	}
 	public static void sort(int[] nums)
 	{
-		nums.toString();
 		Arrays.sort(nums);
 		System.out.println("Sorted array: "+ Arrays.toString(nums));
 	}
 	public static void calculate(int[] nums)
 	{
 		int sum = 0;
-		double avr = 0;
-		for(int i = 0; i<nums.length; i++)
-		{
-			sum += nums[i];
-		}
-		avr = sum/nums.length;
+		double avr ;
+        for (int num : nums) {
+            sum += num;
+        }
+		avr = (double) sum /nums.length;
 		System.out.println("Sum is: "+sum+"\nAverage is: "+avr);
 	}
 }

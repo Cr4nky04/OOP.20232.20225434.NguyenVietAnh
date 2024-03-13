@@ -2,7 +2,7 @@ package Lab01.src.Ex6;
 import java.util.Scanner;
 public class Ex64 {
 
-	public static void main(String[] args) {
+	public static void solve() {
 		int dayCount = 0;
 		String month;
 		int year;

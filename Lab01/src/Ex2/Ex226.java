@@ -1,8 +1,60 @@
 package Lab01.src.Ex2;
+import java.util.Arrays;
+import java.util.Scanner;
 
 public class Ex226 {
 
-	public void firstDegree(double a, double b)
+
+	private static int chooseProblem(Scanner sc)
+	{
+		System.out.println("Choose the problem you want to solve:");
+		System.out.println("1. First-degree equation");
+		System.out.println("2. First degree system equation");
+		System.out.println("3. Second-degree equation");
+        return Integer.parseInt(sc.nextLine());
+	}
+	private static void solveProblem(int problem, Scanner sc)
+	{
+		switch (problem)
+		{
+			default:
+				System.out.println("Invalid input");
+			case 1:
+				System.out.print("Enter a = ");
+				double a = Double.parseDouble(sc.nextLine());
+				System.out.print("Enter b = ");
+				double b = Double.parseDouble(sc.nextLine());
+				firstDegree(a,b);
+				break;
+			case 2:
+				System.out.println("Enter first equation coefficients: ");
+				String[] strFirst = sc.nextLine().split(" ");
+				System.out.println("Enter second equation coefficients: ");
+				String[] strSecond = sc.nextLine().split(" ");
+				double[] douFirst = new double[strFirst.length];
+				double[] douSecond = new double[strSecond.length];
+				for(int i = 0; i<strFirst.length; i++)
+				{
+					douFirst[i] = Double.parseDouble(strFirst[i]);
+				}
+				for(int i = 0; i<strSecond.length; i++)
+				{
+					douSecond[i] = Double.parseDouble(strSecond[i]);
+				}
+				systemEq(douFirst[0], douFirst[1], douFirst[2],douSecond[0],douSecond[1],douSecond[2]);
+				break;
+			case 3:
+				System.out.print("Enter x1 = ");
+				double x1 = Double.parseDouble(sc.nextLine());
+				System.out.print("Enter x2 = ");
+				double x2 = Double.parseDouble(sc.nextLine());
+				System.out.print("Enter x3 = ");
+				double x3 = Double.parseDouble(sc.nextLine());
+				secondDegree(x1,x2,x3);
+				break;
+		}
+	}
+	private static void firstDegree(double a, double b)
 	{
 		double x;
 		if(a==0)
@@ -15,7 +67,7 @@ public class Ex226 {
 			System.out.println("The solution is x = " + x);
 		}
 	}
-	public void systemEq(double a11, double a12,double b1, double a21, double a22, double b2)
+	private static void systemEq(double a11, double a12,double b1, double a21, double a22, double b2)
 	{
 		double x1,x2;
 		double D = a11*a22-a21*a12;
@@ -32,7 +84,7 @@ public class Ex226 {
 			System.out.println("Solution: x1 = "+x1+", x2 = "+x2);
 		}
 	}
-	public void secondDegree(double a, double b, double c)
+	private static void secondDegree(double a, double b, double c)
 	{
 		double delta = b*b - 4*a*c;
 		if(delta<0)
@@ -52,5 +104,11 @@ public class Ex226 {
 			System.out.println("This equation has 2 solutions: x1 = "+x1+", x2 = "+x2);
 		}
 		
+	}
+	public static void solve()
+	{
+		Scanner sc = new Scanner(System.in);
+		int intProb = chooseProblem(sc);
+		solveProblem(intProb,sc);
 	}
 }

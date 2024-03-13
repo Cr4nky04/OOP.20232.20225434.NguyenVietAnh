@@ -2,7 +2,7 @@ package Lab01.src.Ex6;
 import java.util.Scanner;
 public class Ex63 {
 
-	public static void main(String[] args) {
+	public static void solve() {
 		// TODO Auto-generated method stub
 		Scanner scan = new Scanner(System.in);
 		int n = scan.nextInt();

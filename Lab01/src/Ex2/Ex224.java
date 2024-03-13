@@ -2,7 +2,7 @@ package Lab01.src.Ex2;
 import javax.swing.JOptionPane;
 public class Ex224 {
 
-	public static void main(String[] args) {
+	public static void solve() {
 		// TODO Auto-generated method stub
 		String strNum1, strNum2;
 		String strNotification = "You've just entered: ";

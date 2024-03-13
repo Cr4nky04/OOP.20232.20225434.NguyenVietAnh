@@ -2,7 +2,7 @@ package Lab01.src.Ex6;
 import java.util.Scanner;
 public class Ex62 {
 
-	public static void main(String[] args) {
+	public static void solve() {
 		Scanner keyboard = new Scanner(System.in);
 		System.out.println("What's your name?");
 		String strName = keyboard.nextLine();
