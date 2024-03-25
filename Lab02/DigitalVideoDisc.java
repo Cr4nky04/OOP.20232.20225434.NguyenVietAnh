@@ -46,4 +46,30 @@ public class DigitalVideoDisc {
     public void setCost(float cost) {
         this.cost = cost;
     }
+
+    public DigitalVideoDisc(String title)
+    {
+        this.setTitle(title);
+    }
+    public DigitalVideoDisc(String category, String title, float cost)
+    {
+        this.setCategory(category);
+        this.setTitle(title);
+        this.setCost(cost);
+    }
+    public DigitalVideoDisc(String director, String category, String title, float cost)
+    {
+        this.setDirector(director);
+        this.setCategory(category);
+        this.setTitle(title);
+        this.setCost(cost);
+    }
+    public DigitalVideoDisc(String director, String category, String title,int length, float cost)
+    {
+        this.setDirector(director);
+        this.setCategory(category);
+        this.setTitle(title);
+        this.setLength(length);
+        this.setCost(cost);
+    }
 }
