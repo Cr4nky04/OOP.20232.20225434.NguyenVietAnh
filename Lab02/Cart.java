@@ -37,9 +37,9 @@ public class Cart {
     public float totalCost()
     {
         float cost = 0;
-        for(DigitalVideoDisc item : itemsOrdered)
+        for(int i = 0; i<qtyOrdered; i++)
         {
-            cost += item.getCost();
+            cost += itemsOrdered[i].getCost();
         }
         return cost;
     }
