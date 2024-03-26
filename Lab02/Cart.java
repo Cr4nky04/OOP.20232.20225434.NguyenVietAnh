@@ -30,8 +30,9 @@ public class Cart {
         {
             DigitalVideoDisc[] newArray = new DigitalVideoDisc[MAX_NUMBERS_ORDERED];
             System.arraycopy(itemsOrdered, 0, newArray, 0, index);
-            System.arraycopy(itemsOrdered, index + 1, newArray, index, MAX_NUMBERS_ORDERED - index);
+            System.arraycopy(itemsOrdered, index + 1, newArray, index, MAX_NUMBERS_ORDERED - index-1);
             itemsOrdered = newArray;
+            qtyOrdered -= 1;
         }
     }
     public float totalCost()
@@ -43,5 +44,21 @@ public class Cart {
         }
         return cost;
     }
+    public int count()
+    {
+        return qtyOrdered;
+    }
 
+    @Override
+    public String toString() {
+        StringBuilder out = new StringBuilder();
+        for (DigitalVideoDisc digitalVideoDisc : itemsOrdered) {
+            if(digitalVideoDisc != null)
+            {
+                out.append(digitalVideoDisc.getTitle());
+                out.append("\n");
+            }
+        }
+        return out.toString();
+    }
 }

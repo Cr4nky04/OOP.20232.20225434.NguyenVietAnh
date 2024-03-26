@@ -14,5 +14,9 @@ public class Aims {
 
         System.out.println("Total cost is: ");
         System.out.println(anOrder.totalCost());
+
+        anOrder.removeDigitalVideoDisc(dvd3);
+        System.out.println("The remain number of items of cart is: ");
+        System.out.println(anOrder.toString());
     }
 }
