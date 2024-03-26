@@ -51,20 +51,20 @@ public class DigitalVideoDisc {
     {
         this.setTitle(title);
     }
-    public DigitalVideoDisc(String category, String title, float cost)
+    public DigitalVideoDisc(String title, String category, float cost)
     {
         this.setCategory(category);
         this.setTitle(title);
         this.setCost(cost);
     }
-    public DigitalVideoDisc(String director, String category, String title, float cost)
+    public DigitalVideoDisc(String title, String category, String director, float cost)
     {
         this.setDirector(director);
         this.setCategory(category);
         this.setTitle(title);
         this.setCost(cost);
     }
-    public DigitalVideoDisc(String director, String category, String title,int length, float cost)
+    public DigitalVideoDisc(String title, String category, String director,int length, float cost)
     {
         this.setDirector(director);
         this.setCategory(category);
