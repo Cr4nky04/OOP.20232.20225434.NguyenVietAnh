@@ -5,6 +5,10 @@ import java.util.ArrayList;
 public class Store {
     final int MAX_QUANTITY = 20;
     int qty_ordered = 0;
+    public Store()
+    {
+
+    }
     DigitalVideoDisc[] itemsInStore = new DigitalVideoDisc[MAX_QUANTITY];
     public void addDVD(DigitalVideoDisc dvd)
     {
@@ -27,5 +31,21 @@ public class Store {
             itemsInStore = newArray;
             qty_ordered -= 1;
         }
+    }
+    public void print() {
+        StringBuilder out = new StringBuilder();
+        out.append("***********************CART***********************\n");
+        out.append("Ordered Items:\n");
+        int count = 0;
+        for (DigitalVideoDisc digitalVideoDisc : itemsInStore) {
+            if (digitalVideoDisc != null) {
+                count++;
+                out.append(count + ". ");
+                out.append(digitalVideoDisc);
+                out.append("\n");
+            }
+        }
+        out.append("***************************************************");
+        System.out.println(out);
     }
 }
