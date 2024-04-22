@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\Users\admin\IdeaProjects\OOP.20232.20225434.NguyenVietAnh\.metadata\.plugins\org.eclipse.jdt.core
+299656582.index
+1865797976.index
+4021845799.index

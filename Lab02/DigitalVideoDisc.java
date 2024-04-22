@@ -58,6 +58,12 @@ public class DigitalVideoDisc {
         this.id = id;
     }
 
+    @Override
+    public String toString() {
+        String info = "DVD - "+getTitle()+" - "+getCategory()+" - "+getDirector()+" - "+getLength()+": "+String.valueOf(getCost());
+        return info;
+    }
+
     public DigitalVideoDisc(String title)
     {
         this.setTitle(title);
@@ -93,6 +99,10 @@ public class DigitalVideoDisc {
         nbDigitalVideoDisc+=1;
         setId(DigitalVideoDisc.nbDigitalVideoDisc);
 
+    }
+    public boolean isMatch(String title)
+    {
+        return getTitle().equals(title);
     }
     
 }
