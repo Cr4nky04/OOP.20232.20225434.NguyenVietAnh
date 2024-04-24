@@ -1,98 +1,69 @@
 package AimsProject.src.hust.soict.dsai.aims.cart;
 
 import AimsProject.src.hust.soict.dsai.aims.media.DigitalVideoDisc;
+import AimsProject.src.hust.soict.dsai.aims.media.Media;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Objects;
 
 public class Cart {
-    public static final int MAX_NUMBERS_ORDERED = 20;
-    private DigitalVideoDisc itemsOrdered[] =
-            new DigitalVideoDisc[MAX_NUMBERS_ORDERED];
-    private int qtyOrdered = 0;
+    private ArrayList<Media> itemsOrdered;
 
-    public void addDigitalVideoDisc(DigitalVideoDisc disc) {
-        if (qtyOrdered == MAX_NUMBERS_ORDERED) {
-            throw new ArithmeticException("Cannot add more discs. The cart is almost full");
-        }
-        itemsOrdered[qtyOrdered] = disc;
-        qtyOrdered += 1;
+    public void addMedia(Media product) {
+        this.itemsOrdered.add(product);
+
         System.out.println("The disc has been added");
     }
 
-    public void addDigitalVideoDisc(DigitalVideoDisc[] dvdList) {
-        if (qtyOrdered + dvdList.length - 1 >= MAX_NUMBERS_ORDERED) {
-            throw new ArithmeticException("Cannot add more discs. The cart is almost full");
-        }
-        for (DigitalVideoDisc dvd : dvdList) {
-            itemsOrdered[qtyOrdered] = dvd;
-            qtyOrdered += 1;
-        }
-        System.out.println(dvdList.length + " discs have been added");
-    }
-
-    public void addDigitalVideoDisc(DigitalVideoDisc dvd1, DigitalVideoDisc dvd2) {
-        if (qtyOrdered + 1 >= MAX_NUMBERS_ORDERED) {
-            throw new ArithmeticException("Cannot add more discs. The cart is almost full");
-        }
-        itemsOrdered[qtyOrdered] = dvd1;
-        qtyOrdered += 1;
-        itemsOrdered[qtyOrdered] = dvd2;
-        qtyOrdered += 1;
-        System.out.println("2 discs have been added");
-
-    }
-
-    public void removeDigitalVideoDisc(DigitalVideoDisc disc) {
-        int index = -1;
-        for (int i = 0; i < MAX_NUMBERS_ORDERED; i++) {
-            if (itemsOrdered[i].equals(disc)) {
-                index = i;
-                break;
-            }
-        }
-        if (index != -1) {
-            DigitalVideoDisc[] newArray = new DigitalVideoDisc[MAX_NUMBERS_ORDERED];
-            System.arraycopy(itemsOrdered, 0, newArray, 0, index);
-            System.arraycopy(itemsOrdered, index + 1, newArray, index, MAX_NUMBERS_ORDERED - index - 1);
-            itemsOrdered = newArray;
-            qtyOrdered -= 1;
+    public void addMedia(Media[] products) {
+        for (Media product : products) {
+            this.itemsOrdered.add(product);
         }
     }
+
+    public void removeMediaProduct(Media product) {
+        this.itemsOrdered.remove(product);
+    }
+    public void removeMediaProduct(Media[] products) {
+        for (Media product : products) {
+            this.itemsOrdered.remove(product);
+        }
+    }
+
+
 
     public float totalCost() {
         float cost = 0;
-        for (int i = 0; i < qtyOrdered; i++) {
-            cost += itemsOrdered[i].getCost();
+        for (Media product:this.itemsOrdered) {
+            cost += product.getCost();
         }
         return cost;
     }
 
     public int count() {
-        return qtyOrdered;
+        return this.itemsOrdered.size();
     }
 
     public void searchbyID(int id)
     {
-        if(id>qtyOrdered)
+        for(Media product : this.itemsOrdered)
         {
-            System.out.println("Not valid id");
-        }
-        else {
-            DigitalVideoDisc result = itemsOrdered[id];
-            System.out.println(result);
+            if(product.getId() == id)
+            {
+                System.out.println(product);
+            }
         }
 
     }
     public void searchbyTitle(String title)
     {
         boolean search_result = false;
-        for(DigitalVideoDisc dvd: itemsOrdered)
+        for(Media product: itemsOrdered)
         {
-            if(dvd!=null)
+            if(product.getTitle().equals(title))
             {
-                if(dvd.isMatch(title))
-                {
-                    System.out.println(dvd);
-                    search_result = true;
-                }
+                System.out.println(product);
             }
         }
         if(!search_result)
@@ -107,13 +78,12 @@ public class Cart {
         out.append("***********************CART***********************\n");
         out.append("Ordered Items:\n");
         int count = 0;
-        for (DigitalVideoDisc digitalVideoDisc : itemsOrdered) {
-            if (digitalVideoDisc != null) {
-                count++;
-                out.append(count);
-                out.append(digitalVideoDisc);
-                out.append("\n");
-            }
+        for (Media product : itemsOrdered) {
+            count++;
+            out.append(count);
+            out.append(product);
+            out.append("\n");
+
         }
         return out.toString();
     }
@@ -123,11 +93,11 @@ public class Cart {
         out.append("***********************CART***********************\n");
         out.append("Ordered Items:\n");
         int count = 0;
-        for (DigitalVideoDisc digitalVideoDisc : itemsOrdered) {
-            if (digitalVideoDisc != null) {
+        for (Media product : itemsOrdered) {
+            if (product != null) {
                 count++;
                 out.append(count + ". ");
-                out.append(digitalVideoDisc);
+                out.append(product);
                 out.append("\n");
             }
         }
