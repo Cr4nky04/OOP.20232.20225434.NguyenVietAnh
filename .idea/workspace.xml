@@ -5,36 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a055ffec-40ab-4d4a-ab6f-5dbde91885c7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/aims/media/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/aims/media/Disc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/aims/media/Media.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/aims/media/Track.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/aims/media/CompactDisc.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/aims/Aims.java" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/aims/Aims.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/aims/cart/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/aims/cart/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/aims/disc/DigitalVideoDisc.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/aims/store/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/aims/store/Store.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/garbage/ConcatenationInLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/garbage/ConcatenationInLoop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/garbage/GarbageCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/garbage/GarbageCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/garbage/NoGarbage.java" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/garbage/NoGarbage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/test/cart/CartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/test/cart/CartTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/test/disc/TestPassingParameter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/test/store/StoreTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/test/store/StoreTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02/Aims.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02/Cart.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02/CartTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02/Design/AIMS_ClassDiagram.asta" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/Design/AIMS_ClassDiagram.asta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02/Design/Class Diagram.png" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/Design/Class Diagram.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02/DigitalVideoDisc.java" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/aims/media/DigitalVideoDisc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02/ReadingAssignment/ReadingAssigment.png" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/ReadingAssignment/ReadingAssigment.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02/Requirement/AIMS_UseCase.asta" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/Requirement/AIMS_UseCase.asta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02/Requirement/UseCase Diagram.png" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/Requirement/UseCase Diagram.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02/Requirement/UseCase Diagram.png.bak" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/Requirement/UseCase Diagram.png.bak" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02/Store.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02/StoreTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02/TestPasingParameter.java" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/test/disc/TestPasingParameter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02/answer.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/aims/media/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/aims/media/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/aims/media/DigitalVideoDisc.java" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/aims/media/DigitalVideoDisc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/aims/media/Disc.java" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/aims/media/Disc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/aims/media/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/aims/media/Media.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/aims/media/Track.java" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/aims/media/Track.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +115,7 @@
       <option name="presentableId" value="Default" />
       <updated>1713756977845</updated>
       <workItem from="1713756980908" duration="4534000" />
-      <workItem from="1713985067026" duration="1315000" />
+      <workItem from="1713985067026" duration="2161000" />
     </task>
     <servers />
   </component>
