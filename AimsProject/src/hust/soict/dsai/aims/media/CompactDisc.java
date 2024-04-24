@@ -58,4 +58,19 @@ public class CompactDisc extends Disc {
             System.out.println("This track has not been added to the list of track");
         }
     }
+    public int getLength()
+    {
+        int sum_of_length = 0;
+        for(Track track : this.tracks)
+        {
+            sum_of_length += track.getLength();
+        }
+        return sum_of_length;
+    }
+    public void play() {
+        for(Track track : this.tracks)
+        {
+            track.play();
+        }
+    }
 }
