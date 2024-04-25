@@ -10,6 +10,25 @@ public class Book extends Media {
     public Book() {
         super();
     }
+
+    public Book(int id, String title, String category, List<String> authors) {
+        super(id, title, category);
+        this.authors = authors;
+    }
+
+    public Book(int id, String title, String category, float cost, List<String> authors) {
+        super(id, title, category, cost);
+        this.authors = authors;
+    }
+
+    public Book(int id, String title, String category) {
+        super(id, title, category);
+    }
+
+    public Book(int id, String title, String category, float cost) {
+        super(id, title, category, cost);
+    }
+
     public void addAuthor(String authorName)
     {
         if(!this.authors.contains(authorName))
@@ -33,4 +52,8 @@ public class Book extends Media {
         }
     }
 
+    @Override
+    public String toString() {
+        return "Book - " + super.toString();
+    }
 }

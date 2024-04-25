@@ -5,7 +5,7 @@ public class DigitalVideoDisc extends Disc implements Playable {
 
     @Override
     public String toString() {
-        String info = "DVD - "+getTitle()+" - "+getCategory()+" - "+getDirector()+" - "+getLength()+": "+String.valueOf(getCost());
+        String info = "DVD - "+this.getId()+" - "+this.getTitle()+" - "+this.getCategory()+" - "+this.getDirector()+" - "+this.getLength()+": "+ String.valueOf(getCost());
         return info;
     }
 
@@ -29,6 +29,15 @@ public class DigitalVideoDisc extends Disc implements Playable {
     public DigitalVideoDisc(String title, String category, float cost, int length, String director) {
         super(title, category, cost, length, director);
     }
+
+    public DigitalVideoDisc(int id, String title, String category, float cost, int length, String director) {
+        super(id, title, category, cost, length, director);
+    }
+
+    public DigitalVideoDisc(int id, String title, String category, int length, String director) {
+        super(id, title, category, length, director);
+    }
+
 
     public boolean isMatch(String title)
     {

@@ -36,6 +36,12 @@ public class CompactDisc extends Disc {
         super(id, title, category, length, director);
         this.tracks = tracks;
     }
+
+    public CompactDisc(int id, String title, String category, float cost, int length, String director, String artist) {
+        super(id, title, category, cost, length, director);
+        this.artist = artist;
+    }
+
     public void addTrack(Track track)
     {
         if(!this.tracks.contains(track))
@@ -72,5 +78,10 @@ public class CompactDisc extends Disc {
         {
             track.play();
         }
+    }
+
+    @Override
+    public String toString() {
+        return "CD - " + super.toString() + " - " + this.getArtist();
     }
 }

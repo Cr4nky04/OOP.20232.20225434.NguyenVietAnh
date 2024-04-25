@@ -22,10 +22,10 @@ public class Cart {
         }
     }
 
-    public void removeMediaProduct(Media product) {
+    public void removeMedia(Media product) {
         this.itemsOrdered.remove(product);
     }
-    public void removeMediaProduct(Media[] products) {
+    public void removeMedia(Media[] products) {
         for (Media product : products) {
             this.itemsOrdered.remove(product);
         }
