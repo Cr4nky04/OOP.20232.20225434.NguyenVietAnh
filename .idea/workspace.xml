@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a055ffec-40ab-4d4a-ab6f-5dbde91885c7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AimsProject/Design/AIMS_ClassDiagram.asta" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/Design/AIMS_ClassDiagram.asta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AimsProject/Design/Class Diagram.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UseCaseDiagram.uml" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/Design/AIMS_ClassDiagram.uml" afterDir="false" />
-    </list>
+    <list default="true" id="a055ffec-40ab-4d4a-ab6f-5dbde91885c7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,6 +51,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\IdeaProjects\OOP.20232.20225434.NguyenVietAnh\AimsProject\Design" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Aims">
     <configuration name="Aims" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AimsProject.src.hust.soict.dsai.aims.Aims" />
@@ -116,7 +116,7 @@
       <workItem from="1713985067026" duration="4770000" />
       <workItem from="1714013321852" duration="4811000" />
       <workItem from="1714024588863" duration="10710000" />
-      <workItem from="1714050443821" duration="4153000" />
+      <workItem from="1714050443821" duration="4670000" />
     </task>
     <servers />
   </component>
