@@ -1,0 +1,27 @@
+1. What class should implement the Comparable interface?
+
+The class representing the items in the cart should implement the Comparable interface.
+By doing so, we enable the natural ordering of these items based on specific criteria.
+
+2. In those classes, how should you implement the compareTo () method to reflect the ordering that we want?
+
+The compareTo() method should be overridden in the class implementing Comparable.
+It should return:
+A positive integer if the current object is greater than the parameter object.
+A negative integer if the current object is less than the parameter object.
+Zero if the current object is equal to the parameter object.
+The compareTo() method defines the natural comparison order for the objects.
+
+3. Can we have two ordering rules for the item (by title then cost and by cost then title) if we use this Comparable interface approach?
+
+No, the Comparable interface allows only one natural ordering.
+If you need multiple ordering rules (e.g., by title and then by cost), consider using a custom comparator (not the Comparable interface).
+
+4. Suppose the DVDs have a different ordering rule from the other media types, that is by title, then decreasing length, then cost.
+How would you modify your code to allow this?
+
+To accommodate different ordering rules for DVDs and other media types:
+Create a separate class (e.g., MediaItem) that implements Comparable.
+In the compareTo() method, apply the specific rules for DVDs (title, decreasing length, and cost).
+For other media types, apply the desired rules (e.g., title and cost).
+When sorting the cart items, use different comparators based on the media type.
