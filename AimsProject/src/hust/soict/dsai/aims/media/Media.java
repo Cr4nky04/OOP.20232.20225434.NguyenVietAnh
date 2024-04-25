@@ -4,7 +4,7 @@ import java.util.Comparator;
 import java.util.Collections;
 
 
-public abstract class Media {
+public abstract class Media  {
     private int id;
     private String title;
     private String category;
@@ -15,6 +15,10 @@ public abstract class Media {
     public Media() {
     }
 
+    public Media(String title)
+    {
+        this.title = title;
+    }
     public Media(String title, String category, float cost) {
         this.title = title;
         this.category = category;

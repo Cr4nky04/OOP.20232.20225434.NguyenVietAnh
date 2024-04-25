@@ -10,6 +10,10 @@ public class CompactDisc extends Disc {
         return artist;
     }
 
+    public CompactDisc()
+    {
+
+    }
     public CompactDisc(int id, String title, String category, int length, String director, String artist, ArrayList<Track> tracks) {
         super(id, title, category, length, director);
         this.artist = artist;
@@ -73,6 +77,7 @@ public class CompactDisc extends Disc {
         }
         return sum_of_length;
     }
+    @Override
     public void play() {
         for(Track track : this.tracks)
         {

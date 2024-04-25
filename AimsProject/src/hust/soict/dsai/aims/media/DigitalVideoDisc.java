@@ -1,6 +1,6 @@
 package AimsProject.src.hust.soict.dsai.aims.media;
 
-public class DigitalVideoDisc extends Disc implements Playable {
+public class DigitalVideoDisc extends Disc {
     private static int nbDigitalVideoDisc = 0;
 
     @Override
@@ -9,6 +9,10 @@ public class DigitalVideoDisc extends Disc implements Playable {
         return info;
     }
 
+    public DigitalVideoDisc()
+    {
+        super();
+    }
 
     public DigitalVideoDisc(String title)
     {
