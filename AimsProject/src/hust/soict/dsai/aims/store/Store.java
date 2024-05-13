@@ -124,5 +124,8 @@ public class Store {
     {
         Collections.sort(this.itemsInStore,COMPARE_BY_COST_TITLE);
     }
-
+    public ArrayList<Media> getItemsInStore()
+    {
+        return itemsInStore;
+    }
 }
