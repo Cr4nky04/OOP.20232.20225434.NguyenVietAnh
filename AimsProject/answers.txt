@@ -1,27 +1,24 @@
-1. What class should implement the Comparable interface?
+Some comparison betwwen AWT and Swing in Java:
 
-The class representing the items in the cart should implement the Comparable interface.
-By doing so, we enable the natural ordering of these items based on specific criteria.
+1. Top-level Containers:
+-AWT: AWT stands for Abstract Window Toolkit. It is a platform-dependent API to develop GUI
+(Graphical User Interface) or window-based applications in Java1.
+-Swing: Swing is a lightweight Java graphical user interface (GUI) that is used to create
+various applications. Swing has platform-independent components1.
+2. Class Names of Components:
+-AWT: The AWT Component classes are provided by the java.awt package2.
+-Swing: The Swing component classes are provided by the javax.swing package2.
+3. Event-Handling:
+-AWT: AWT is based on a peer-based architecture, utilizing native platform components3.
+-Swing: Swing follows a lightweight architecture with its own set of components3.
+4.Appearance of Applications:
+-AWT: The appearance of AWT Components is mainly not configurable.
+It generally depends on the operating system’s look and feel2.
+-Swing: The Swing Components are configurable and mainly support pluggable look and feel2.
 
-2. In those classes, how should you implement the compareTo () method to reflect the ordering that we want?
-
-The compareTo() method should be overridden in the class implementing Comparable.
-It should return:
-A positive integer if the current object is greater than the parameter object.
-A negative integer if the current object is less than the parameter object.
-Zero if the current object is equal to the parameter object.
-The compareTo() method defines the natural comparison order for the objects.
-
-3. Can we have two ordering rules for the item (by title then cost and by cost then title) if we use this Comparable interface approach?
-
-No, the Comparable interface allows only one natural ordering.
-If you need multiple ordering rules (e.g., by title and then by cost), consider using a custom comparator (not the Comparable interface).
-
-4. Suppose the DVDs have a different ordering rule from the other media types, that is by title, then decreasing length, then cost.
-How would you modify your code to allow this?
-
-To accommodate different ordering rules for DVDs and other media types:
-Create a separate class (e.g., MediaItem) that implements Comparable.
-In the compareTo() method, apply the specific rules for DVDs (title, decreasing length, and cost).
-For other media types, apply the desired rules (e.g., title and cost).
-When sorting the cart items, use different comparators based on the media type.
+In summary, while both AWT and Swing can be used to develop GUI applications in Java,
+they have significant differences in their top-level containers, class names of components,
+event-handling, and the resulting appearances of the applications developed using them.
+Swing, being a part of Java Foundation Classes (JFC), is lightweight and provides more
+functionalities compared to AWT1. It also supports a pluggable look and feel, which makes
+the applications developed using Swing have a platform-independent appearance2.

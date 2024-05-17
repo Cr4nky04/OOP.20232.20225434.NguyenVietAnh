@@ -2,7 +2,6 @@ package AimsProject.src.hust.soict.dsai.aims.media;
 
 public class DigitalVideoDisc extends Disc {
     private static int nbDigitalVideoDisc = 0;
-
     @Override
     public String toString() {
         String info = "DVD - "+this.getId()+" - "+this.getTitle()+" - "+this.getCategory()+" - "+this.getDirector()+" - "+this.getLength()+": "+ String.valueOf(getCost());

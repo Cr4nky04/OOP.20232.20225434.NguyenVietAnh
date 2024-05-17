@@ -10,7 +10,7 @@ import static AimsProject.src.hust.soict.dsai.aims.media.Media.COMPARE_BY_COST_T
 import static AimsProject.src.hust.soict.dsai.aims.media.Media.COMPARE_BY_TITLE_COST;
 
 public class Store {
-    private ArrayList<Media> itemsInStore;
+    private ArrayList<Media> itemsInStore = new ArrayList<Media>();
 
     public Store() {
 

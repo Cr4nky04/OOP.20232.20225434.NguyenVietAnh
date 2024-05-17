@@ -8,6 +8,14 @@ public class Disc extends Media implements Playable {
         return length;
     }
 
+    public void setLength(int length) {
+        this.length = length;
+    }
+
+    public void setDirector(String director) {
+        this.director = director;
+    }
+
     public String getDirector() {
         return director;
     }

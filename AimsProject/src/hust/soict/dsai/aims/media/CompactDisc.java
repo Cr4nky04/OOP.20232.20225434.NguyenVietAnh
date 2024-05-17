@@ -6,6 +6,10 @@ public class CompactDisc extends Disc {
     private String artist;
     private ArrayList<Track> tracks;
 
+    public void setArtist(String artist) {
+        this.artist = artist;
+    }
+
     public String getArtist() {
         return artist;
     }
