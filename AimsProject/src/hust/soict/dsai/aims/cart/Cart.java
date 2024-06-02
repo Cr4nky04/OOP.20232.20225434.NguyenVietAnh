@@ -2,19 +2,41 @@ package AimsProject.src.hust.soict.dsai.aims.cart;
 
 import AimsProject.src.hust.soict.dsai.aims.media.DigitalVideoDisc;
 import AimsProject.src.hust.soict.dsai.aims.media.Media;
+import javafx.beans.Observable;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
+import javax.naming.LimitExceededException;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Objects;
 
 public class Cart {
-    private ArrayList<Media> itemsOrdered;
+    private final int MAX_NUMBERS_ORDERED = 15;
+    private ObservableList<Media> itemsOrdered = FXCollections.observableArrayList();
 
-    public void addMedia(Media product) {
-        this.itemsOrdered.add(product);
-
-        System.out.println("The disc has been added");
+    public ObservableList<Media> getItemsOrdered() {
+        return itemsOrdered;
     }
+
+    public void setItemsOrdered(ObservableList<Media> itemsOrdered) {
+        this.itemsOrdered = itemsOrdered;
+    }
+
+    public void addMedia(Media product) throws LimitExceededException
+    {
+        if(itemsOrdered.size()<MAX_NUMBERS_ORDERED)
+        {
+            this.itemsOrdered.add(product);
+
+            System.out.println("The disc has been added");
+        }
+        else
+        {
+            throw new LimitExceededException("ERROR: The number of " + "media has reached its limit");
+        }
+    }
+
 
     public void addMedia(Media[] products) {
         for (Media product : products) {

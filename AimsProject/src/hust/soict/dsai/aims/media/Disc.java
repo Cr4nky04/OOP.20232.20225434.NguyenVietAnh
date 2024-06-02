@@ -1,5 +1,7 @@
 package AimsProject.src.hust.soict.dsai.aims.media;
 
+import AimsProject.src.hust.soict.dsai.aims.exception.PlayerException;
+
 public class Disc extends Media implements Playable {
     private int length;
     private String director;
@@ -48,7 +50,7 @@ public class Disc extends Media implements Playable {
     }
 
     @Override
-    public void play() {
+    public void play() throws PlayerException {
 
     }
 }

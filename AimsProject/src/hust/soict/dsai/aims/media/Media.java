@@ -71,13 +71,21 @@ public abstract class Media  {
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if(!(obj instanceof Media))
+    public boolean equals(Object obj) throws NullPointerException
+    {
+        if(obj==null)
         {
-            return false;
+            throw new NullPointerException();
         }
-        Media obj1 = (Media) obj;
-        return this.getTitle().equals(obj1.getTitle());
+        else
+        {
+            if(!(obj instanceof Media))
+            {
+                return false;
+            }
+            Media obj1 = (Media) obj;
+            return this.getTitle().equals(obj1.getTitle()) && this.getCost()==obj1.getCost();
+        }
     }
 
     @Override

@@ -1,20 +1,24 @@
 package AimsProject.src.hust.soict.dsai.aims;
 
 import AimsProject.src.hust.soict.dsai.aims.cart.Cart;
+import AimsProject.src.hust.soict.dsai.aims.exception.PlayerException;
 import AimsProject.src.hust.soict.dsai.aims.media.*;
 import AimsProject.src.hust.soict.dsai.aims.store.Store;
 
+import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
+import javax.swing.*;
 public class Aims {
     static Scanner scanner = new Scanner(System.in);
     static Store store = new Store();
     static Cart cart = new Cart();
-    public static void main(String[] args) {
+    public static void main(String[] args) throws PlayerException {
 //        DigitalVideoDisc disk1 = new DigitalVideoDisc("Jungle");
 //        DigitalVideoDisc disk2 = new DigitalVideoDisc("Jungle1");
 //        DigitalVideoDisc disk3 = new DigitalVideoDisc("Jungle2");
@@ -30,9 +34,10 @@ public class Aims {
         for (Media m : mediae) {
             System.out.println(m.toString());
         }
+        showMenu();
     }
 
-    public static void showMenu() {
+    public static void showMenu() throws PlayerException {
         System.out.println("AIMS: ");
         System.out.println("-----------------------------------");
         System.out.println("1. View store");
@@ -59,8 +64,7 @@ public class Aims {
         }
     }
 
-    private static void updateStore()
-    {
+    private static void updateStore() throws PlayerException {
         System.out.println("Options: ");
         System.out.println("-----------------------------------");
         System.out.println("1. Add a media to store");
@@ -99,8 +103,7 @@ public class Aims {
             System.out.println("This product may not be existed in Store");
         }
     }
-    private static void addMediaToStore()
-    {
+    private static void addMediaToStore() throws PlayerException {
         System.out.println("Choose the type of media you want to add:");
         System.out.println("--------------------------------");
         System.out.println("1. Book");
@@ -129,7 +132,7 @@ public class Aims {
                 System.out.println("Invalid choice");
         }
     }
-    public static void storeMenu() {
+    public static void storeMenu() throws PlayerException {
         System.out.println("Options: ");
         System.out.println("-----------------------------------");
         System.out.println("1. See a media's details");
@@ -157,7 +160,7 @@ public class Aims {
         }
     }
 
-    private static void playMediaInStore() {
+    private static void playMediaInStore() throws PlayerException {
         System.out.println("Name of media you want to play");
         String mediaTitle = scanner.nextLine();
         Media product = store.checkExist(mediaTitle);
@@ -167,7 +170,7 @@ public class Aims {
             }
         }
     }
-    private static void playMediaInCart() {
+    private static void playMediaInCart() throws PlayerException {
         System.out.println("Name of media you want to play");
         String mediaTitle = scanner.nextLine();
         Media product = cart.checkExist(mediaTitle);
@@ -187,7 +190,7 @@ public class Aims {
         }
     }
 
-    private static void seeMedia() {
+    private static void seeMedia() throws PlayerException {
         System.out.println("Name of media you want to see");
         String mediaTitle = scanner.nextLine();
         Media product = store.checkExist(mediaTitle);
@@ -196,7 +199,7 @@ public class Aims {
 
     }
 
-    public static void mediaDetailsMenu(Media product) {
+    public static void mediaDetailsMenu(Media product) throws PlayerException {
         if (product instanceof Disc) {
             System.out.println("Options: ");
             System.out.println("-----------------------------------");
@@ -227,7 +230,7 @@ public class Aims {
 
     }
 
-    public static void cartMenu() {
+    public static void cartMenu() throws PlayerException {
         System.out.println("Options: ");
         System.out.println("-----------------------------------");
         System.out.println("1. Filter media in cart");
@@ -264,7 +267,7 @@ public class Aims {
         }
     }
 
-    private static void filterMedia() {
+    private static void filterMedia() throws PlayerException {
         System.out.println("Options: ");
         System.out.println("-----------------------------------");
         System.out.println("1. Filter media in cart by ID");
@@ -296,7 +299,7 @@ public class Aims {
         }
     }
 
-    private static void sortMedia() {
+    private static void sortMedia() throws PlayerException {
         System.out.println("Options: ");
         System.out.println("-----------------------------------");
         System.out.println("1. Sort media in cart by title");
@@ -334,4 +337,5 @@ public class Aims {
         System.out.println("An order is created");
         cart.emptyCart();
     }
+
 }
