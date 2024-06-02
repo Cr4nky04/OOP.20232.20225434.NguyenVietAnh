@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="282900c2-710c-4c78-a99c-d737a7182567" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/answers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/answers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +30,7 @@
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
@@ -152,7 +153,7 @@
       <workItem from="1716867408542" duration="45000" />
       <workItem from="1716867463951" duration="107000" />
       <workItem from="1717325620553" duration="210000" />
-      <workItem from="1717325870538" duration="173000" />
+      <workItem from="1717325870538" duration="1850000" />
     </task>
     <servers />
   </component>
